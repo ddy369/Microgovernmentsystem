@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"        >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_magazine_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_magazine_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/act_magazine_toolbar_tv_title" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/act_magazine_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_below="@+id/act_magazine_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/fontSize_standard_20sp"
+        android:textColor="@color/colorTextViewRed"/>
+    
+    <TextView
+        android:id="@+id/act_magazine_tv_issue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_magazine_tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/fontSize_standard_15sp"
+        android:textColor="@color/colorActivityGrayText"/>
+
+    <TextView
+        android:id="@+id/act_magazine_tv_department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_magazine_tv_issue"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorActivityGrayText"/>
+
+    <TextView
+        android:id="@+id/act_magazine_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_magazine_tv_issue"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorActivityGrayText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/act_magazine_tv_department"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDividerRed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/magazine_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </WebView>
+
+</RelativeLayout>
+

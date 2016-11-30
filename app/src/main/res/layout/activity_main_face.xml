@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/act_main_face_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="horizontal"
+        android:background="@color/colorImageButtonBackgroundWrite">
+
+        <ImageButton
+            android:id="@+id/act_main_face_government_affairs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_ga_affairs1_24dp"
+            android:background="@color/colorImageButtonBackgroundWrite"
+            tools:ignore="NestedWeights" />
+
+        <ImageButton
+            android:id="@+id/act_main_face_mail_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_ga_mail_list_24dp"
+            android:background="@color/colorImageButtonBackgroundWrite"/>
+
+        <ImageButton
+            android:id="@+id/act_main_face_find"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_ga_find_24dp"
+            android:background="@color/colorImageButtonBackgroundWrite"/>
+
+        <ImageButton
+            android:id="@+id/act_main_face_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_ga_me_24dp"
+            android:background="@color/colorImageButtonBackgroundWrite"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

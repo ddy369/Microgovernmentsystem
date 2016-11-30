@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listview_for_select_all_sv">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.NestedListView
+        android:id="@+id/lv_department_information_list_select_all_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorListViewDivider"
+        android:background="#F7F7F7"
+        android:dividerHeight="1dp"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fadingEdge="none">
+    </app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.NestedListView>
+    </ScrollView>
+</LinearLayout>
+

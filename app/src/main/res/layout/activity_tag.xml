@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_tag_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_tag_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/act_memorandum_tv_title" />
+
+            <TextView
+                android:id="@+id/act_tag_tv_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:text="@string/act_tag_save"
+                android:textSize="20sp"
+                android:textColor="@color/colorTextViewText"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/act_tag_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <ImageView
+            android:id="@+id/act_tag_iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_act_tag_title_24dp" />
+
+        <EditText
+            android:id="@+id/act_tag_edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/act_tag_iv_title"
+            android:layout_toRightOf="@+id/act_tag_iv_title"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/act_tag_tv_title"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_marginLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_tag_rl_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <ImageView
+            android:id="@+id/act_tag_iv_ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_ring1_24dp" />
+
+        <TextView
+            android:id="@+id/act_tag_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/act_tag_iv_ring"
+            android:layout_toRightOf="@+id/act_tag_iv_ring"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:hint="@string/act_tag_tv_ring"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_marginLeft="5dp" />
+
+        <ImageButton
+            android:id="@+id/act_tag_ibt_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:src="@drawable/ic_close_24dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_tag_rl_select_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <ImageView
+            android:id="@+id/act_tag_iv_ring1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_time_select_24dp" />
+
+        <TextView
+            android:id="@+id/act_tag_tv_time_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/act_tag_iv_ring1"
+            android:layout_toRightOf="@+id/act_tag_iv_ring1"
+            android:layout_marginStart="5dp"
+            android:layout_centerVertical="true"
+            android:text="@string/act_tag_tv_time_select"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/act_tag_tv_time_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="40dp"
+            android:layout_toEndOf="@+id/act_tag_tv_time_select"
+            android:layout_toRightOf="@+id/act_tag_tv_time_select"
+            android:textSize="20sp"
+            android:text="@string/act_tag_tv_time_show"
+            android:layout_marginLeft="20dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorLayoutBackground">
+
+        <EditText
+            android:id="@+id/act_tag_edt_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:gravity="top"
+            android:hint="@string/act_tag_edt_text"
+            android:textSize="20sp"
+            android:background="@null"/>
+    </RelativeLayout>
+
+</LinearLayout>

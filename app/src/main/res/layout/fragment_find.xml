@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/fragment_find_ll1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayoutBackground">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/fragment_find_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/act_header_tv_title"
+                    android:text="@string/act_find_tv_title" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorLayoutBackground"
+                    tools:ignore="NestedWeights">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_find_man_156dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal"
+                    android:background="@color/colorActivityBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_centerVertical="true"
+                        style="@style/fontSize_standard_15sp"
+                        android:text="@string/frg_find_tv_government_tool"
+                        android:layout_marginLeft="15dp" />
+
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/frg_find_gv_government_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth"/>
+
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:paddingBottom="10dp"-->
+                    <!--android:background="@color/colorLayoutBackground">-->
+
+                    <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                        <!--android:id="@+id/act_find_ibt_email"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                        <!--android:contentDescription="@string/app_name"-->
+                        <!--android:layout_marginLeft="15dp" />-->
+
+                    <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                        <!--android:id="@+id/act_find_ibt_doorWeb"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginStart="15dp"-->
+                        <!--android:layout_toEndOf="@+id/act_find_ibt_email"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                        <!--android:contentDescription="@string/app_name"-->
+                        <!--android:layout_marginLeft="15dp"-->
+                        <!--android:layout_toRightOf="@+id/act_find_ibt_email" />-->
+
+                <!--</RelativeLayout>-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorActivityBackground">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="15dp"
+                        style="@style/fontSize_standard_15sp"
+                        android:text="@string/frg_find_tv_common_tool"
+                        android:layout_marginLeft="15dp" />
+
+                </RelativeLayout>
+
+                <GridView
+                    android:id="@+id/frg_find_gv_common_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="auto_fit"
+                    android:verticalSpacing="10dp"
+                    android:padding="10dp"
+                    android:stretchMode="columnWidth"/>
+
+            </LinearLayout>
+
+        <!--</ScrollView>-->
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:fadingEdge="none"-->
+            <!--android:fillViewport="true"-->
+            <!--android:scrollbars="none"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:background="@color/colorLayoutBackground">-->
+
+                <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                    <!--android:id="@+id/act_find_ibt_micro_blog"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="15dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:layout_marginLeft="15dp" />-->
+
+                <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                    <!--android:id="@+id/act_find_ibt_we_chat"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="15dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_toEndOf="@+id/act_find_ibt_micro_blog"-->
+                    <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_toRightOf="@+id/act_find_ibt_micro_blog" />-->
+
+                <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                    <!--android:id="@+id/act_find_ibt_didi_travel"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="15dp"-->
+                    <!--android:layout_toEndOf="@+id/act_find_ibt_we_chat"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_toRightOf="@+id/act_find_ibt_we_chat" />-->
+
+                <!--<app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.ImageTextButtonTool-->
+                    <!--android:id="@+id/act_find_ibt_read_word"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="15dp"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_toEndOf="@+id/act_find_ibt_didi_travel"-->
+                    <!--android:background="@color/colorImageButtonBackgroundTransparent"-->
+                    <!--android:contentDescription="@string/app_name"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:layout_toRightOf="@+id/act_find_ibt_didi_travel" />-->
+
+            <!--</RelativeLayout>-->
+
+        <!--</HorizontalScrollView>-->
+
+</LinearLayout>

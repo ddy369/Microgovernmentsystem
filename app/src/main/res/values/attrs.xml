@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="fontSize_standard_13sp" format="reference|dimension" />
+    <attr name="fontSize_standard_15sp" format="reference|dimension" />
+    <attr name="fontSize_standard_17sp" format="reference|dimension" />
+    <attr name="fontSize_standard_20sp" format="reference|dimension" />
+</resources>

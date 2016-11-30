@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_publish_notice_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_publish_notice_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                android:id="@+id/main_title"
+                style="@style/act_header_tv_title"
+                android:text="@string/act_publish_notice_tv_title" />
+
+            <Button
+                android:id="@+id/act_publish_notice_bt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                style="@style/act_header_ibt_toolbar_right"
+                android:text="@string/act_publish_notice_bt_send"
+                android:textSize="17sp"
+                android:textColor="@color/colorButtonText"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorActivityBackground">
+
+        <RelativeLayout
+            android:id="@+id/act_publish_notice_rl_department"
+            style="@style/act_publish_notice_rl">
+
+            <TextView
+                android:id="@+id/act_publish_notice_tv_label_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/fontSize_standard_15sp"
+                android:text="@string/act_publish_notice_tv_department"
+                android:textColor="@color/colorActivityGrayText"/>
+
+            <TextView
+                android:id="@+id/act_publish_notice_tv_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/act_publish_notice_tv_label_department"
+                android:layout_toRightOf="@+id/act_publish_notice_tv_label_department"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/act_publish_notice_ibt_add_department"
+                android:layout_toLeftOf="@+id/act_publish_notice_ibt_add_department"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                style="@style/fontSize_standard_15sp"
+                android:singleLine="true"
+                android:background="@null"
+                tools:ignore="LabelFor" />
+
+            <ImageButton
+                android:id="@+id/act_publish_notice_ibt_add_department"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:src="@drawable/ic_circle_plus_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_publish_notice_rl_receiver"
+            style="@style/act_publish_notice_rl">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_notice_tv_label_receiver"
+                    android:textColor="@color/colorActivityGrayText"/>
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_receiver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/act_publish_notice_tv_label_receiver"
+                    android:layout_toEndOf="@+id/act_publish_notice_tv_label_receiver"
+                    android:layout_toLeftOf="@+id/act_publish_notice_ibt_add_receiver"
+                    android:layout_toStartOf="@+id/act_publish_notice_ibt_add_receiver"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    style="@style/fontSize_standard_15sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    tools:ignore="LabelFor" />
+
+                <ImageButton
+                    android:id="@+id/act_publish_notice_ibt_add_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_circle_plus_24dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/act_publish_notice_rl">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_sender"
+                    android:textColor="@color/colorActivityGrayText"/>
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_sender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/act_publish_notice_tv_label_sender"
+                    android:layout_toRightOf="@+id/act_publish_notice_tv_label_sender"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    style="@style/fontSize_standard_15sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    tools:ignore="HardcodedText,LabelFor" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_publish_notice_rl_message"
+                style="@style/act_publish_notice_rl">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_message"
+                    android:textColor="@color/colorActivityGrayText"/>
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/act_publish_notice_tv_label_message"
+                    android:layout_toEndOf="@+id/act_publish_notice_tv_label_message"
+                    android:layout_toLeftOf="@+id/act_publish_notice_ibt_select_message"
+                    android:layout_toStartOf="@+id/act_publish_notice_ibt_select_message"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorTextViewTextBlack"
+                    style="@style/fontSize_standard_15sp" />
+
+                <ImageButton
+                    android:id="@+id/act_publish_notice_ibt_select_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_down_arrow_24dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_publish_notice_rl_receipt"
+                style="@style/act_publish_notice_rl">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_receipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_receipt"
+                    android:textColor="@color/colorActivityGrayText"/>
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_receipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/act_publish_notice_tv_label_receipt"
+                    android:layout_toEndOf="@+id/act_publish_notice_tv_label_receipt"
+                    android:layout_toLeftOf="@+id/act_publish_notice_ibt_select_receipt"
+                    android:layout_toStartOf="@+id/act_publish_notice_ibt_select_receipt"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/colorTextViewTextBlack"
+                    style="@style/fontSize_standard_15sp" />
+
+                <ImageButton
+                    android:id="@+id/act_publish_notice_ibt_select_receipt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:src="@drawable/ic_down_arrow_24dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/act_publish_notice_rl">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_theme"
+                    android:textColor="@color/colorActivityGrayText"/>
+
+                <EditText
+                    android:id="@+id/act_publish_notice_edt_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/act_publish_notice_tv_label_theme"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    style="@style/fontSize_standard_15sp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:background="@null"
+                    android:inputType="text"
+                    tools:ignore="LabelFor"
+                    android:layout_toRightOf="@+id/act_publish_notice_tv_label_theme" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/act_publish_notice_rl_Text"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="5"
+                android:background="@color/colorLayoutBackground">
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_text"
+                    tools:ignore="RelativeOverlap"
+                    android:textColor="@color/colorActivityGrayText"
+                    android:layout_marginLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/act_publish_notice_ibt_add_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/act_publish_notice_tv_label_add_attachment"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_notice_pin_36dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"
+                    android:layout_toLeftOf="@+id/act_publish_notice_tv_label_add_attachment" />
+
+                <TextView
+                    android:id="@+id/act_publish_notice_tv_label_add_attachment"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    style="@style/fontSize_standard_15sp"
+                    android:text="@string/act_publish_notice_tv_add_attachment"
+                    android:textColor="@color/colorTextViewBlue"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp" />
+
+                <EditText
+                    android:id="@+id/act_publish_notice_edit_content"
+                    android:layout_width= "match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/fontSize_standard_15sp"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:maxLines="20"
+                    android:ellipsize="end"
+                    android:gravity="top"
+                    android:background="@null"
+                    tools:ignore="LabelFor"
+                    android:layout_below="@+id/act_publish_notice_tv_text" />
+
+
+                <WebView
+                    android:id="@+id/act_publish_notice_webView_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="top"
+                    android:layout_below="@+id/act_publish_notice_edit_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="1"
+                    android:maxLines="20"
+                    style="@style/fontSize_standard_15sp"
+                    android:background="@null"
+                    tools:ignore="LabelFor" />
+
+                <!--<ListView-->
+                    <!--android:id="@+id/act_publish_notice_lv"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/act_publish_notice_edt_text"-->
+                    <!--android:layout_alignParentBottom="true">-->
+
+                <!--</ListView>-->
+
+            </RelativeLayout>
+        <!-- TODO: Update blank fragment layout -->
+
+        <ListView
+            android:id = "@+id/act_add_attachment_list"
+            android:stackFromBottom = "true"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentLeft = "true"
+            android:layout_below = "@+id/act_publish_notice_rl_Text" >
+        </ListView>
+
+    </LinearLayout>
+
+
+    </LinearLayout>

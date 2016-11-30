@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_import_contacts_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/read_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/read_detail" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+        <WebView
+            android:id="@+id/readDetail"
+            android:layout_below="@id/act_import_contacts_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

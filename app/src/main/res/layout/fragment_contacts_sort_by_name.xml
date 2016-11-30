@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ExpandableListView
+                android:id="@+id/frag_sort_by_name_list_elv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+            </ExpandableListView>
+
+            <TextView
+                android:id="@+id/frag_sort_by_name__tv_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="按姓名排序"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.SideBar
+            android:id="@+id/frag_sort_by_name_sidebar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

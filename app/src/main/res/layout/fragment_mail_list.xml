@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/frg_mail_list_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/act_header_tv_title"
+                    android:text="@string/frg_mail_list_tv_title" />
+
+                <ImageButton
+                    android:id="@+id/frg_ga_ibt_menu1"
+                    style="@style/act_header_ibt_toolbar_right"
+                    android:src="@drawable/ic_ga_three_point_36dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@color/colorActivityBackground"
+            tools:ignore="NestedWeights"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <EditText
+                android:id="@+id/frg_mail_list_edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/frg_mail_list_ibt_select"
+                android:paddingStart="30dp"
+                android:paddingEnd="0dp"
+                android:textSize="16sp"
+                android:textColor="@color/colorActivityGrayText"
+                android:hint="@string/act_notice_list_edt_search"
+                android:background="@drawable/edit_search_sharp"
+                android:layout_toLeftOf="@+id/frg_mail_list_ibt_select"
+                android:paddingLeft="30dp"
+                android:paddingRight="0dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_magnifier_18dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/frg_mail_list_ibt_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_sort_48dp"
+                android:background="@color/colorActivityBackground"
+                android:contentDescription="@string/app_name"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/frg_mail_list_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:background="@color/colorLayoutBackground">
+
+
+        </RelativeLayout>
+
+</LinearLayout>

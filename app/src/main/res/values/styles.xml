@@ -1,0 +1,131 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <!--登录页面勾选框-->
+    <style name="CheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/check_style</item>
+    </style>
+
+    <!--每个页面标题栏题目的风格-->
+    <style name="act_header_tv_title" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/activity_header_tv_title_text</item>
+        <item name="android:textColor">@color/colorTextViewText</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--field页面标题栏题目的风格-->
+    <style name="act_header_tv_field" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="android:textSize">@dimen/activity_header_tv_field_text</item>
+        <item name="android:textColor">@color/colorTextViewText</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!--每个页面返回按钮的风格-->
+    <style name="act_header_ibt_return" parent="@android:style/Widget.ImageButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/ic_return_36dp</item>
+        <item name="android:background">@color/colorImageButtonBackgroundTransparent</item>
+    </style>
+
+    <!--每个位于toolbar最右端的按钮属性-->
+    <style name="act_header_ibt_toolbar_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <!--出现在某些页面中的灰色分割线属性-->
+    <style name="act_divider_gray">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/colorActivityBackground</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <!--字号设置-->
+    <!--小号字体-->
+    <style name="Theme_Small">
+        <item name="fontSize_standard_13sp">10sp</item>
+        <item name="fontSize_standard_15sp">12sp</item>
+        <item name="fontSize_standard_17sp">14sp</item>
+        <item name="fontSize_standard_20sp">17sp</item>
+    </style>
+    <!--标准字体-->
+    <style name="Theme_Standard">
+        <item name="fontSize_standard_13sp">12sp</item>
+        <item name="fontSize_standard_15sp">15sp</item>
+        <item name="fontSize_standard_17sp">17sp</item>
+        <item name="fontSize_standard_20sp">20sp</item>
+    </style>
+    <!--大号字体-->
+    <style name="Theme_Large">
+        <item name="fontSize_standard_13sp">14sp</item>
+        <item name="fontSize_standard_15sp">18sp</item>
+        <item name="fontSize_standard_17sp">20sp</item>
+        <item name="fontSize_standard_20sp">23sp</item>
+    </style>
+    <!--超大字体-->
+    <style name="Theme_Larger">
+        <item name="fontSize_standard_13sp">16sp</item>
+        <item name="fontSize_standard_15sp">21sp</item>
+        <item name="fontSize_standard_17sp">23sp</item>
+        <item name="fontSize_standard_20sp">26sp</item>
+    </style>
+    <!--特大字体-->
+    <style name="Theme_Largest">
+        <item name="fontSize_standard_13sp">18sp</item>
+        <item name="fontSize_standard_15sp">24sp</item>
+        <item name="fontSize_standard_17sp">26sp</item>
+        <item name="fontSize_standard_20sp">29sp</item>
+    </style>
+
+    <!--设置13sp标准大小的一套字体-->
+    <style name="fontSize_standard_13sp">
+        <item name="android:textSize">?attr/fontSize_standard_13sp</item>
+    </style>
+
+    <!--设置15sp标准大小的一套字体-->
+    <style name="fontSize_standard_15sp">
+        <item name="android:textSize">?attr/fontSize_standard_15sp</item>
+    </style>
+
+    <!--设置17sp标准大小的一套字体-->
+    <style name="fontSize_standard_17sp">
+        <item name="android:textSize">?attr/fontSize_standard_17sp</item>
+    </style>
+
+    <!--设置20sp标准大小的一套字体-->
+    <style name="fontSize_standard_20sp">
+        <item name="android:textSize">?attr/fontSize_standard_20sp</item>
+    </style>
+
+
+    <!--以下为具体页面的格式-->
+    <!--发布通知页面的布局格式与布局中的控件格式-->
+    <style name="act_publish_notice_rl">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:background">@color/colorLayoutBackground</item>
+    </style>
+
+</resources>

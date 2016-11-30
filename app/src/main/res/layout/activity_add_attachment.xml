@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorActivityBackground"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/act_add_attachment_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_pin1_36dp"
+        android:contentDescription="@string/app_name"/>
+    
+    <TextView
+        android:id="@+id/act_add_attachment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/act_add_attachment_picture"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:text="附件名"
+        android:textColor="@color/colorTextViewTextBlack"
+        android:layout_toRightOf="@+id/act_add_attachment_picture"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/act_add_attachment_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/act_add_attachment_name"
+        android:layout_marginStart="5dp"
+        android:text="（177KB）"
+        android:textColor="@color/colorTextViewTextBlack"
+        android:layout_toRightOf="@+id/act_add_attachment_name"
+        android:layout_marginLeft="5dp" />
+
+    
+    <TextView
+        android:id="@+id/act_add_attachment_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="删除"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

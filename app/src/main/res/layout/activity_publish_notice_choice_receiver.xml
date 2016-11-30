@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_publish_notice_choice_receiver_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="@string/act_publish_notice_choice_receiver_tv_title"
+                style="@style/act_header_tv_title" />
+
+            <Button
+                android:id="@+id/act_publish_notice_choice_receiver_bt_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                style="@style/act_header_ibt_toolbar_right"
+                android:text="@string/act_publish_notice_choice_list_bt_done"
+                android:textSize="17sp"
+                android:textColor="@color/colorButtonText"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ExpandableListView
+        android:id="@+id/act_publish_notice_choice_receiver_elv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+    </ExpandableListView>
+
+</LinearLayout>

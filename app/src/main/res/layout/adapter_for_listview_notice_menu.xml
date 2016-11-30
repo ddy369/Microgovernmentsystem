@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/adp_for_lv_notice_menu_rl">
+
+    <TextView
+        android:id="@+id/adp_for_lv_notice_menu_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        style="@style/fontSize_standard_15sp"
+        android:textColor="@color/colorTextViewText"/>
+
+</RelativeLayout>

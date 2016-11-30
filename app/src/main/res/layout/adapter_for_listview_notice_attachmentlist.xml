@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <ImageButton
+        android:id="@+id/act_notice_ibt_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/ic_notice_pin_36dp"
+        android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+    <TextView
+        android:id="@+id/act_notice_tv_download_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="10dp"
+        android:singleLine="false"
+        android:ellipsize="end"
+        style="@style/fontSize_standard_15sp"
+
+        android:textColor="@color/colorTextViewBlue"/>
+</LinearLayout>

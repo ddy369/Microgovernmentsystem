@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_memorandum_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_memorandum_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/act_memorandum_tv_title" />
+
+            <TextView
+                android:id="@+id/act_memorandum_tv_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_calendar"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTextViewText"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/act_memorandum_tv_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorTextViewText"
+                android:text="@string/act_memorandum_tv_delete"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:id="@+id/act_memorandum_tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorTextViewText"
+                android:text="@string/act_memorandum_tv_cancel"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    
+    <android.support.design.widget.TabLayout
+        android:id="@+id/act_memorandum_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextViewBlue"
+        app:tabMode="scrollable">
+
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/act_memorandum_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+   </LinearLayout>

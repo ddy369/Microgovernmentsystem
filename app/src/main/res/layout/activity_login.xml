@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/ic_login_background"
+    >
+
+    <LinearLayout
+        android:id="@+id/act_login_ll_face"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/act_login_ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_ga_picture_142dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_login_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/act_login_rl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_sharp">
+
+                <EditText
+                    android:id="@+id/act_login_edt_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/act_login_ibt_account"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:hint="@string/act_login_edt_account"
+                    android:layout_toRightOf="@+id/act_login_ibt_account" />
+
+                <ImageButton
+                    android:id="@+id/act_login_ibt_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_login_account_24dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/act_login_rl_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act_login_rl_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_sharp">
+
+                <EditText
+                    android:id="@+id/act_login_edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/act_login_ibt_password"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:hint="@string/act_login_edt_password"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_toRightOf="@+id/act_login_ibt_password" />
+
+                <ImageButton
+                    android:id="@+id/act_login_ibt_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/ic_login_password_24dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"
+                    android:layout_alignParentLeft="true" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/act_login_bt_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/act_login_rl_password"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/act_login_bt"
+                android:textColor="@color/colorButtonText"
+                android:background="@drawable/button_sharp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_login_ll_underside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="@color/colorBottomBackground">
+
+    </LinearLayout>
+
+</FrameLayout>

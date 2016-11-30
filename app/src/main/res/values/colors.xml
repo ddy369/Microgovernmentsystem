@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0984EC</color>
+    <color name="colorPrimaryDark">#0984EC</color>
+    <color name="colorBottomBackground">#99000000</color>
+    <color name="colorAccent">#a5a5a5</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="colorTextViewText">#FFFFFF</color>
+    <color name="colorTextViewTextBlack">#000000</color>
+    <color name="colorImageButtonBackgroundTransparent">#00FFFFFF</color>
+    <color name="colorImageButtonBackgroundWrite">#FAFAFA</color>
+    <color name="colorActivityBackground">#eaeaea</color>
+    <color name="colorLayoutBackground">#FFFFFF</color>
+    <color name="colorActivityGrayText">#a5a5a5</color>
+    <color name="colorTextViewBackground">#FFFFFF</color>
+    <color name="colorListViewDivider">#eaeaea</color>
+    <color name="colorListViewDividerGray">#a5a5a5</color>
+    <color name="colorTextViewBlue">#0984EC</color>
+    <color name="colorDividerRed">#FF0000</color>
+    <color name="colorTextViewRed">#FF0000</color>
+    <color name="colorShapeBlue">#85a4db</color>
+    <color name="colorShapeBlue1">#4cb6c4</color>
+    <color name="colorShapeGreen">#b8d229</color>
+    <color name="colorShapeOrange">#F5ae6e</color>
+    <color name="black">#000000</color>
+    <color name="grey_line">#e0e0e0</color>
+</resources>

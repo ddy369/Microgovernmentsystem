@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorActivityBackground">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/act_setting_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/act_setting_ibt_return"
+                    style="@style/act_header_ibt_return"
+                    android:contentDescription="@string/app_name"
+                    android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+                <TextView
+                    style="@style/act_header_tv_title"
+                    android:text="@string/act_setting_toolbar_tv_title" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/act_setting_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorLayoutBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_setting_tv_font_size"
+                android:layout_centerVertical="true"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/act_setting_tv_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/act_setting_ibt_font"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_toLeftOf="@+id/act_setting_ibt_font" />
+
+            <ImageButton
+                android:id="@+id/act_setting_ibt_font"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="false"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_setting_rl_mid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorLayoutBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_setting_tv_new_remind"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:id="@+id/act_setting_ibt_message_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_close_24dp"
+                android:clickable="false"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_setting_rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:background="@color/colorLayoutBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_setting_tv_remove_binding"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/act_setting_rl_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@color/colorLayoutBackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/act_setting_tv_clear"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/act_setting_bt_new_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/act_setting_bt_new_version"
+            style="@style/fontSize_standard_15sp"
+            android:background="@color/colorImageButtonBackgroundWrite"/>
+
+        <TextView
+            android:id="@+id/act_setting_tv_new_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="1.0.1"
+            android:textColor="@color/colorActivityGrayText"
+            style="@style/fontSize_standard_15sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_setting_ll_underside"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:clickable="true"
+        android:background="@color/colorBottomBackground">
+
+    </LinearLayout>
+</FrameLayout>

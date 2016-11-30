@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/act_import_contacts_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/colorLayoutBackground">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/act_import_contacts_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/act_import_contacts_bt_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingEnd="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="17sp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:text="@string/act_import_contacts_bt_all"/>
+
+                <TextView
+                    style="@style/act_header_tv_title"
+                    android:text="@string/frg_mail_list_tv_title" />
+
+                <Button
+                    android:id="@+id/act_import_contacts_bt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingEnd="0dp"
+                    android:paddingRight="0dp"
+                    style="@style/act_header_ibt_toolbar_right"
+                    android:text="@string/act_import_contacts_bt_cancel"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorButtonText"
+                    android:background="@color/colorImageButtonBackgroundTransparent"/>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <ExpandableListView
+            android:id="@+id/act_import_contacts_list_elv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/act_import_contacts_toolbar"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp">
+
+        </ExpandableListView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_import_contacts_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorLayoutBackground">
+
+        <Button
+            android:id="@+id/act_import_contacts_bt_import"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextViewText"
+            android:text="@string/act_import_contacts_bt_import"
+            android:background="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

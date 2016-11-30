@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_public_information_list_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/act_public_information_list_tv_title" />
+
+            <ImageButton
+                android:id="@+id/act_public_information_list_ibt_menu"
+                style="@style/act_header_ibt_toolbar_right"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_three_wire_36dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/act_public_information_list_rl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:background="@color/colorActivityBackground">
+
+        <EditText
+            android:id="@+id/act_public_information_list_edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/act_public_information_list_ibt_select"
+            android:layout_toLeftOf="@+id/act_public_information_list_ibt_select"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textSize="16sp"
+            android:textColor="@color/colorActivityGrayText"
+            android:hint="@string/act_notice_list_edt_search"
+            android:background="@drawable/edit_search_sharp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_magnifier_18dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageButton
+            android:id="@+id/act_public_information_list_ibt_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_all_part_48dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@color/colorLayoutBackground">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/act_public_information_list_swipe_container">
+
+            <ListView
+                android:id="@+id/act_public_information_list_listview"
+                android:layout_width="match_parent"
+                android:background="@color/colorLayoutBackground"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.NestedListView
+        android:id="@+id/lv_magazine_list_select_listview"
+        android:background="#F7F7F7"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:dividerHeight="1dp"
+        android:divider="@color/colorListViewDivider"
+        android:scrollbars="none"
+        android:overScrollMode="always"
+        android:fadingEdge="none">
+
+    </app.mgs.com.microgovernmentsystem.com.microgovernmentsystem.tools.NestedListView>
+</ScrollView>
+</LinearLayout>

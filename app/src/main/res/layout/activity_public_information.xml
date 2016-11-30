@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_public_information_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_public_information_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                android:id="@+id/act_public_information_field"
+                style="@style/act_header_tv_field" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/fontSize_standard_20sp"
+        android:textColor="@color/colorTextViewTextBlack"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_label_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        style="@style/fontSize_standard_15sp"
+        android:text="@string/act_public_information_infopeople"
+        android:textColor="@color/colorActivityGrayText"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_label_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_label_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        style="@style/fontSize_standard_15sp"
+        android:text="@string/act_public_information_infoDate"
+        android:textColor="@color/colorActivityGrayText"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_label_dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_label_time"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        style="@style/fontSize_standard_15sp"
+        android:text="@string/act_public_information_dense"
+        android:textColor="@color/colorActivityGrayText"
+        android:visibility="invisible"/>
+
+    <ImageButton
+        android:id="@+id/act_public_information_ibt_download_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/act_public_information_tv_label_download_label_video"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_notice_downloading_36dp"
+        android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_label_download_label_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_label_dense"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/act_public_information_ibt_download"
+        android:layout_toRightOf="@+id/act_public_information_ibt_download"
+        android:text="@string/act_public_information_video"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/fontSize_standard_15sp"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_label_download_label_video"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorTextViewBlue"
+        style="@style/fontSize_standard_15sp"/>
+
+    <ImageButton
+        android:id="@+id/act_public_information_ibt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/act_public_information_tv_label_picture_download"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_notice_downloading_36dp"
+        android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_label_picture_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_video"
+        android:layout_marginTop="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@+id/act_public_information_ibt_download"
+        android:layout_toRightOf="@+id/act_public_information_ibt_download"
+        android:text="@string/act_public_information_picture"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/fontSize_standard_15sp"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/act_public_information_tv_label_picture_download"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorTextViewBlue"
+        style="@style/fontSize_standard_15sp"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/act_public_information_tv_label_name"
+        android:layout_toEndOf="@+id/act_public_information_tv_label_name"
+        android:layout_toRightOf="@+id/act_public_information_tv_label_name"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        style="@style/fontSize_standard_15sp"
+        android:textColor="@color/colorTextViewTextBlack"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/act_public_information_tv_label_time"
+        android:layout_toEndOf="@+id/act_public_information_tv_label_time"
+        android:layout_toRightOf="@+id/act_public_information_tv_label_time"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        style="@style/fontSize_standard_15sp"
+        android:textColor="@color/colorTextViewTextBlack"/>
+
+    <TextView
+        android:id="@+id/act_public_information_tv_dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/act_public_information_tv_label_dense"
+        android:layout_toEndOf="@+id/act_public_information_tv_label_dense"
+        android:layout_toRightOf="@+id/act_public_information_tv_label_dense"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        style="@style/fontSize_standard_15sp"
+        android:textColor="@color/colorTextViewTextBlack"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/act_document_divider_red"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/act_public_information_tv_label_dense"
+        android:layout_marginTop="3dp"
+        android:background="@color/colorDividerRed"
+        android:orientation="vertical"/>
+
+    <WebView
+        android:id="@+id/public_information_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/act_public_information_tv_label_dense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </WebView>
+
+</RelativeLayout>

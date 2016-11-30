@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorActivityBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/frg_me_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/frg_me_tv_title" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/frg_me_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_me_toolbar"
+        android:padding="20dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:id="@+id/frg_me_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/fontSize_standard_20sp"
+            android:text="马锐"
+            android:textColor="@color/colorTextViewTextBlack" />
+
+        <TextView
+            android:id="@+id/frg_me_tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/frg_me_tv_name"
+            android:layout_marginStart="10dp"
+            android:text="办公室"
+            style="@style/fontSize_standard_15sp"
+            android:layout_alignBaseline="@+id/frg_me_tv_name"
+            android:textColor="@color/colorActivityGrayText"
+            android:ellipsize="end"
+            android:layout_toRightOf="@+id/frg_me_tv_name"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/frg_me_tv_label_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_me_tv_position"
+            android:layout_marginTop="10dp"
+            android:layout_alignStart="@+id/frg_me_tv_name"
+            android:text="@string/frg_me_tv_label_position"
+            android:textColor="@color/colorActivityGrayText"
+            style="@style/fontSize_standard_15sp"
+            android:layout_alignLeft="@+id/frg_me_tv_name" />
+
+        <TextView
+            android:id="@+id/frg_me_tv_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frg_me_tv_position"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/frg_me_tv_label_position"
+            android:text="信息中心"
+            android:textColor="@color/colorActivityGrayText"
+            style="@style/fontSize_standard_15sp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/frg_me_tv_label_position" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_me_rl_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/frg_me_rl_top"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            style="@style/fontSize_standard_15sp"
+            android:text="@string/frg_me_tv_about"
+            android:textColor="@color/colorTextViewTextBlack"
+            tools:ignore="RelativeOverlap"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="false"
+            android:src="@drawable/ic_chevron_right_24dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_me_rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_me_rl_mid"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            style="@style/fontSize_standard_15sp"
+            android:text="@string/frg_me_tv_setting"
+            android:textColor="@color/colorTextViewTextBlack"
+            tools:ignore="RelativeOverlap"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="false"
+            android:src="@drawable/ic_chevron_right_24dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frg_me_rl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_me_rl_bottom"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            style="@style/fontSize_standard_15sp"
+            android:text="@string/frg_me_tv_feedback"
+            android:textColor="@color/colorTextViewTextBlack"
+            tools:ignore="RelativeOverlap"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:clickable="false"
+            android:src="@drawable/ic_chevron_right_24dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/frg_me_bt_log_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frg_me_rl_feedback"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/frg_me_tv_exit_log"
+        android:background="@color/colorImageButtonBackgroundWrite"/>
+
+
+</RelativeLayout>

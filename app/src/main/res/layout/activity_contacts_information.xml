@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/act_contacts_information_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/act_contacts_information_ibt_return"
+                style="@style/act_header_ibt_return"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+            <TextView
+                style="@style/act_header_tv_title"
+                android:text="@string/act_contacts_information_tv_title" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <ImageView
+            android:id="@+id/act_contacts_information_iv_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_linkman_72dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/act_contacts_information_iv_portrait"
+            android:layout_toRightOf="@+id/act_contacts_information_iv_portrait"
+            style="@style/fontSize_standard_20sp"
+            android:textColor="@color/colorTextViewTextBlack"/>
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_label_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/act_contacts_information_tv_name"
+            android:layout_toEndOf="@+id/act_contacts_information_iv_portrait"
+            android:layout_toRightOf="@+id/act_contacts_information_iv_portrait"
+            android:text="@string/act_contacts_information_tv_label_department"
+            style="@style/fontSize_standard_15sp"
+            android:textColor="@color/colorTextViewTextBlack"/>
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_label_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@+id/act_contacts_information_tv_label_department"
+            android:layout_toEndOf="@+id/act_contacts_information_iv_portrait"
+            android:layout_toRightOf="@+id/act_contacts_information_iv_portrait"
+            android:text="@string/act_contacts_information_tv_label_position"
+            style="@style/fontSize_standard_15sp"
+            android:textColor="@color/colorTextViewTextBlack"/>
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_department"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/act_contacts_information_tv_name"
+            android:layout_toEndOf="@+id/act_contacts_information_tv_label_department"
+            android:layout_toRightOf="@+id/act_contacts_information_tv_label_department"
+            style="@style/fontSize_standard_15sp"
+            android:textColor="@color/colorTextViewTextBlack"/>
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/act_contacts_information_tv_label_department"
+            android:layout_toEndOf="@+id/act_contacts_information_tv_label_position"
+            android:layout_toRightOf="@+id/act_contacts_information_tv_label_position"
+            style="@style/fontSize_standard_15sp"
+            android:textColor="@color/colorTextViewTextBlack"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_contacts_information_rl_mobile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_label_mobile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机      "
+            android:textColor="@color/colorTextViewTextBlack"
+            style="@style/fontSize_standard_15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_mobile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/act_contacts_information_tv_label_mobile_phone"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/colorTextViewTextBlack"
+            android:text="aaaaa"
+            style="@style/fontSize_standard_15sp"
+            android:layout_toRightOf="@+id/act_contacts_information_tv_label_mobile_phone"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/act_contacts_information_ibt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_message2_18dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageButton
+            android:id="@+id/act_contacts_information_ibt_mobile_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/act_contacts_information_ibt_message"
+            android:layout_toLeftOf="@+id/act_contacts_information_ibt_message"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_telephone2_18dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/act_contacts_information_rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_label_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/act_contacts_information_tv_label_phone"
+            android:textColor="@color/colorTextViewTextBlack"
+            style="@style/fontSize_standard_15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/act_contacts_information_tv_label_phone"
+            android:layout_marginStart="15dp"
+            android:text="aaaaa"
+            android:textColor="@color/colorTextViewTextBlack"
+            style="@style/fontSize_standard_15sp"
+            android:layout_toRightOf="@+id/act_contacts_information_tv_label_phone"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:id="@+id/act_contacts_information_ibt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_telephone2_18dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/act_contacts_information_rl_remarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorLayoutBackground">
+
+        <TextView
+            android:id="@+id/act_contacts_information_tv_label_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/act_contacts_information_tv_label_remarks"
+            android:textColor="@color/colorTextViewTextBlack"
+            style="@style/fontSize_standard_15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageButton
+            android:id="@+id/act_contacts_information_ibt_remarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_chevron_right_24dp"
+            android:background="@color/colorImageButtonBackgroundTransparent"
+            android:contentDescription="@string/app_name"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/act_contacts_information_bt_import"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/act_contacts_information_bt_import"
+        android:textColor="@color/colorTextViewText"
+        style="@style/fontSize_standard_20sp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/act_contacts_information_bt_instant_messaging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/act_contacts_information_bt_instant_messaging"
+        android:textColor="@color/colorTextViewTextBlack"
+        style="@style/fontSize_standard_20sp"
+        android:background="@color/colorLayoutBackground"/>
+
+</LinearLayout>

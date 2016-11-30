@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frg_ga_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorActivityBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/frg_ga_tv_title"
+                    style="@style/act_header_tv_title"
+                    android:text="@string/frg_ga_tv_title"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageButton
+                    android:id="@+id/frg_ga_ibt_menu"
+                    style="@style/act_header_ibt_toolbar_right"
+                    android:src="@drawable/ic_ga_three_point_36dp"
+                    android:background="@color/colorImageButtonBackgroundTransparent"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/frg_ga_ll_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/frg_ga_ll_welcome_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="马锐"
+                style="@style/fontSize_standard_20sp"
+                android:textColor="@color/colorTextViewTextBlack" />
+
+            <TextView
+                android:id="@+id/frg_ga_ll_welcome_tv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/frg_ga_ll_welcome_tv_name"
+                android:layout_alignBaseline="@+id/frg_ga_ll_welcome_tv_name"
+                android:text="办公室"
+                style="@style/fontSize_standard_15sp"
+                android:textColor="@color/colorActivityGrayText"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/frg_ga_ll_welcome_tv_name" />
+
+            <TextView
+                android:id="@+id/frg_ga_ll_welcome_tv_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/frg_ga_ll_welcome_tv_position"
+                style="@style/fontSize_standard_15sp"
+                android:textColor="@color/colorActivityGrayText" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:id="@+id/frg_ga_rl_notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/frg_ga_ibt_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:src="@drawable/ic_ga_notice_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:contentDescription="@string/app_name"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/frg_ga_tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/frg_ga_ibt_notice"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorTextViewTextBlack"
+                android:text="@string/frg_ga_tv_notice"
+                tools:ignore="RelativeOverlap"
+                style="@style/fontSize_standard_15sp"
+                android:layout_toRightOf="@+id/frg_ga_ibt_notice"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/noticenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_circular"
+                android:textColor="@color/colorTextViewText"
+                android:text="99+"
+                style="@style/fontSize_standard_15sp"
+                android:layout_alignBottom="@+id/frg_ga_tv_notice"
+                android:layout_toLeftOf="@+id/imageButton"
+                android:layout_toStartOf="@+id/imageButton" />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/imageButton" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:id="@+id/frg_ga_rl_document"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/frg_ga_ibt_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:src="@drawable/ic_ga_document_24dp"
+                android:contentDescription="@string/app_name"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/frg_ga_ibt_document"
+                android:textColor="@color/colorTextViewTextBlack"
+                android:text="@string/frg_ga_tv_document"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/frg_ga_ibt_document"
+                android:id="@+id/frg_ga_tv_document"/>
+            <TextView
+                android:id="@+id/docunmentnum"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_circular"
+                android:textColor="@color/colorTextViewText"
+                android:text=" 1 "
+                style="@style/fontSize_standard_15sp"
+                android:layout_alignBottom="@+id/frg_ga_tv_document"
+                android:layout_toLeftOf="@+id/imageButton1"
+                android:layout_toStartOf="@+id/imageButton1" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:id="@+id/frg_ga_rl_magazine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/frg_ga_ibt_magazine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_ga_magazine_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/frg_ga_ibt_magazine"
+                android:textColor="@color/colorTextViewTextBlack"
+                android:text="@string/frg_ga_tv_magazine"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/frg_ga_ibt_magazine"
+                android:id="@+id/frg_ga_tv_magazine"/>
+
+            <TextView
+                android:id="@+id/magazinenum"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_circular"
+                android:textColor="@color/colorTextViewText"
+                android:text=" 1 "
+                style="@style/fontSize_standard_15sp"
+                android:layout_alignBottom="@+id/frg_ga_tv_magazine"
+                android:layout_toLeftOf="@+id/imageButton2"
+                android:layout_toStartOf="@+id/imageButton2" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:id="@+id/frg_ga_rl_public_information"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/frg_ga_ibt_public_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_ga_public_information_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/frg_ga_ibt_public_information"
+                android:textColor="@color/colorTextViewTextBlack"
+                android:text="@string/frg_ga_tv_public_information"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/frg_ga_tv_publicinformation"
+                android:layout_toRightOf="@+id/frg_ga_ibt_public_information" />
+            <TextView
+                android:id="@+id/publicinformationnum"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_circular"
+                android:textColor="@color/colorTextViewText"
+                android:text=" 1 "
+                style="@style/fontSize_standard_15sp"
+                android:layout_alignBottom="@+id/frg_ga_tv_publicinformation"
+                android:layout_toLeftOf="@+id/imageButton3"
+                android:layout_toStartOf="@+id/imageButton3" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:background="@color/colorTextViewBackground">
+
+        <RelativeLayout
+            android:id="@+id/frg_ga_rl_department_information"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/frg_ga_ibt_departmentinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_ga_department_information_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/frg_ga_ibt_departmentinformation"
+                android:textColor="@color/colorTextViewTextBlack"
+                android:text="@string/frg_ga_tv_department_information"
+                style="@style/fontSize_standard_15sp"
+                tools:ignore="RelativeOverlap"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/frg_ga_tv_departmentinformation"
+                android:layout_toRightOf="@+id/frg_ga_ibt_departmentinformation" />
+            <TextView
+                android:id="@+id/departmentinformationnum"
+                android:gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_circular"
+                android:textColor="@color/colorTextViewText"
+                android:text=" 1 "
+                style="@style/fontSize_standard_15sp"
+                android:layout_alignBottom="@+id/frg_ga_tv_departmentinformation"
+                android:layout_toLeftOf="@+id/imageButton4"
+                android:layout_toStartOf="@+id/imageButton4" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_chevron_right_24dp"
+                android:background="@color/colorImageButtonBackgroundTransparent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.8"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf">
+
+    </LinearLayout>
+
+
+</LinearLayout>
